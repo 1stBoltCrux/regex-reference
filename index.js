@@ -194,5 +194,7 @@ console.log(password.match(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*\-\\])\
 // date validation
 
 const date = '12-30-1985\n08-08-1975\n8-8-1986\n10/30/1985';
-
+// anchors at the beginning and end for new-line matching - 'm' flag at the end 
+// denotes 'new line' matching for anchors - lots of 'or' statements for all
+// the ways to write a date, other than that pretty clear 
 console.log(date.match(/^(0?[1-9]|1[0-2])[-/](0?[1-9]|3?[0-1]|[1-2][0-9])[-/]\d{4}$/gm))
